@@ -40,8 +40,8 @@ Ao clicar no botão sem a aplicação rodando nós podemos selecionar um nome pa
 Temos opções de pinos digitais, analógicos e virtuais referentes ao nosso microcontrolador, onde para o primeiro botão selecionaremos a saída D1. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60518597/117671187-e6bbe000-b17e-11eb-841f-090ec3222952.jpg" width="250">
-  <img src="https://user-images.githubusercontent.com/60518597/117671220-ee7b8480-b17e-11eb-84fa-f0b79c6936a0.jpg" width="250">
+  <img src="https://user-images.githubusercontent.com/60518597/117836746-3b2e9080-b24f-11eb-85b2-8775a8a03a82.jpg" width="250">
+  <img src="https://user-images.githubusercontent.com/60518597/117836793-4681bc00-b24f-11eb-8234-95bb520bb3e1.jpg" width="250">
 </p>
 
 Ainda no canto direito, temos um símbolo de start que “rodará” a aplicação, nos permitindo testar o visual de nosso botão.  
@@ -53,7 +53,7 @@ Você pode optar por manter apenas um LED, mas em nosso exemplo criamos mais 2 b
 Basta seguirmos os mesmos passos para criar os botões, porém definindo o botão do LED amarelo como saída D2 e o botão do LED verde como saída D3.  
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60518597/117671755-85e0d780-b17f-11eb-894c-ea37d10024b2.jpg" width="250">
+  <img src="https://user-images.githubusercontent.com/60518597/117836846-51d4e780-b24f-11eb-9a7a-63f3ddcc8832.jpg" width="250">
   <img src="https://user-images.githubusercontent.com/60518597/117672232-07d10080-b180-11eb-85ed-5e4ca439794b.jpg" width="250">
 </p>
 
@@ -81,7 +81,7 @@ Após isso, devemos selecionar "Sketch > Incluir Biblioteca > Gerenciar Bibliote
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60518597/117677096-8760ce80-b184-11eb-9914-3aeb95b353d7.png" width="650">
-  <img src="https://user-images.githubusercontent.com/60518597/117677918-46b58500-b185-11eb-96d1-55de488ead0c.png" width="650">
+  <img src="https://user-images.githubusercontent.com/60518597/117837205-a2e4db80-b24f-11eb-9923-d17f37ed0e2e.png" width="650">
 </p>
 
 Agora podemos codar!  
@@ -103,7 +103,7 @@ Utilizaremos o código a seguir:
 //Token de autorização do seu projeto (enviado por email)
 char auth[] = "my-auth";
 //Informações da sua rede Wi-Fi
-char ssid[] = "my-wifi";
+char ssid[] = "my-wifi-name";
 char pass[] = "my-wifi-password";
 
 void setup()
@@ -136,8 +136,8 @@ Esse código está disponível para download aqui no repositório, basta que voc
 Podemos clicar o ícone do monitor Serial que se encontra no canto superior direito da IDE, onde podemos acompanhar o status da conexão.  
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60518597/117818031-9310cb80-b23e-11eb-9d49-515d96e4bce0.png">
-  <img src="https://user-images.githubusercontent.com/60518597/117817789-5513a780-b23e-11eb-8be0-460394f11cd3.png">
+  <img src="https://user-images.githubusercontent.com/60518597/117818031-9310cb80-b23e-11eb-9d49-515d96e4bce0.png" width="400">
+  <img src="https://user-images.githubusercontent.com/60518597/117837593-f35c3900-b24f-11eb-9a6c-5f27938a4988.png">
 </p>
 
 Se aparece no Serial um "Ready", tudo aparenta estar bem!  
