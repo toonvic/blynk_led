@@ -7,7 +7,7 @@
 #include <BlynkSimpleEsp8266.h>
 
 char auth[] = "my-auth";
-char ssid[] = "my-wifi";
+char ssid[] = "my-wifi-name";
 char pass[] = "my-wifi-password";
 
 void setup()
