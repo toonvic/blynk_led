@@ -89,31 +89,73 @@ Agora podemos codar!
 Utilizaremos o código a seguir:  
 
 ```
+//Mensagens de status de conexão que aparecerão no terminal Serial
 #define BLYNK_PRINT Serial
 
+//Definição de constantes dos pinos
 #define LED_PIN_D1 5
 #define LED_PIN_D2 4
 #define LED_PIN_D3 0
 
-#include <ESP8266WiFi.h>
+//Configurações Blynk x Esp8266
 #include <BlynkSimpleEsp8266.h>
 
-char auth[] = "auth";
-char ssid[] = "wifi";
-char pass[] = "password";
+//Token de autorização do seu projeto (enviado por email)
+char auth[] = "my-auth";
+//Informações da sua rede Wi-Fi
+char ssid[] = "my-wifi";
+char pass[] = "my-wifi-password";
 
 void setup()
 {
+  //Definição dos pinos
   pinMode(LED_PIN_D1, OUTPUT);
   pinMode(LED_PIN_D2, OUTPUT);
   pinMode(LED_PIN_D3, OUTPUT);
-  
+
+  //Inicialização do terminal Serial
   Serial.begin(9600);
-  
+
+  //Responsável por configurações e conexão da rede
   Blynk.begin(auth, ssid, pass);
 }
+
 void loop()
 {
+  //Gerencia a conexão com o servidor
   Blynk.run();
 }
 ```
+
+Esse código está disponível para download aqui no repositório, basta que você abra o .ino e dê o upload do código em seu ESP8266 ao clicar no botão "Carregar" ou ao pressionar as teclas CTRL + U.  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60518597/117816790-45479380-b23d-11eb-93cd-9c5e0ce820e8.png" width="300">
+</p>
+
+Podemos clicar o ícone do monitor Serial que se encontra no canto superior direito da IDE, onde podemos acompanhar o status da conexão.  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60518597/117818031-9310cb80-b23e-11eb-9d49-515d96e4bce0.png">
+  <img src="https://user-images.githubusercontent.com/60518597/117817789-5513a780-b23e-11eb-8be0-460394f11cd3.png">
+</p>
+
+Se aparece no Serial um "Ready", tudo aparenta estar bem!  
+
+## Circuito
+Agora montamos o circuito, que deve ficar dessa forma:  
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60518597/117830927-7aa6ae00-b24a-11eb-9940-512997b4f03e.png">
+</p>
+
+E, se estiver tudo certo, esse será o resultado:  
+
+https://user-images.githubusercontent.com/60518597/117822641-1d5b2e80-b243-11eb-8199-09e62d9efd6c.mp4
+
+## Fin
+Se funcionou, mandou bem!  
+
+Senão, pode voltar no tutorial ou entrar em contato que podemos te ajudar! :)  
+
+Esperamos que tenha gostado, sayonara!
