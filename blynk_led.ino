@@ -12,7 +12,6 @@ char pass[] = "my-wifi-password";
 
 void setup()
 {
-  //Definição dos pinos
   pinMode(LED_PIN_D1, OUTPUT);
   pinMode(LED_PIN_D2, OUTPUT);
   pinMode(LED_PIN_D3, OUTPUT);
