@@ -125,6 +125,7 @@ void loop()
   //Gerencia a conexão com o servidor
   Blynk.run();
 }
+
 ```
 
 Esse código está disponível para download aqui no repositório, basta que você abra o .ino e dê o upload do código em seu ESP8266 ao clicar no botão "Carregar" ou ao pressionar as teclas CTRL + U.  
@@ -143,10 +144,19 @@ Podemos clicar o ícone do monitor Serial que se encontra no canto superior dire
 Se aparece no Serial um "Ready", tudo aparenta estar bem!  
 
 ## Circuito
+Itens necessários:  
+
+- 1x jogo de jumpers macho X fêmea;  
+- 1x jogo de jumpers macho X macho;  
+- 1x protoboard de 400 pontos ou maior;  
+- 3x resistores 330Ohm;  
+- 3x LEDs disfusos, cor de preferência (usamos vermelho, amarelo e verde);  
+- 1x microcontrolador ESP8266.  
+
 Agora montamos o circuito, que deve ficar dessa forma:  
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60518597/117830927-7aa6ae00-b24a-11eb-9940-512997b4f03e.png">
+  <img src="https://user-images.githubusercontent.com/60518597/117968318-70dd8300-b2fc-11eb-94d2-a91612c0dd82.png">
 </p>
 
 E, se estiver tudo certo, esse será o resultado:  
