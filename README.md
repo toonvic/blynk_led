@@ -1,5 +1,10 @@
 # Acionamento remoto de LEDs com Blynk 🚦
-  
+
+## It's showtime! 🗿
+Para este tutorial, utilizaremos o Blynk e o Arduino IDE para montarmos um circuito que nos permite acender LED's remotamente.  
+
+Estaremos utilizando o Arduino IDE, plataforma de desenvolvimento Arduino, pela sua praticidade, mas recomendamos também o uso do PlatformIO para uma melhor estrutura de código.
+
 ## O que é o Blynk?  
 O Blynk é uma plataforma mobile que nos permite criar aplicações que possam interagir com uma grande variedade de hardwares remotamente – ESP32, ESP8266, todos os modelos de Arduino e Raspberry, etc.  
   
@@ -55,6 +60,15 @@ Basta seguirmos os mesmos passos para criar os botões, porém definindo o botã
 <p align="center">
   <img src="https://user-images.githubusercontent.com/60518597/117836846-51d4e780-b24f-11eb-9a7a-63f3ddcc8832.jpg" width="250">
   <img src="https://user-images.githubusercontent.com/60518597/117672232-07d10080-b180-11eb-85ed-5e4ca439794b.jpg" width="250">
+</p>
+
+Podemos também compartilhar o acesso da nossa aplicação, recurso disponível nas configurações do projeto, mas essa função nos consome 1000 energias permanentes.  
+
+Energias são uma espécie de "dinheiro" que são usadas para adicionar Widgets ou compartilhar projetos, então tem que administrar bem!
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60518597/117977713-7ee4d100-b307-11eb-8a60-f35c21f35c4e.png" width="250">
+  <img src="https://user-images.githubusercontent.com/60518597/117977669-755b6900-b307-11eb-8ea3-3217a1c501b5.jpg" width="250">
 </p>
 
 E pronto, temos nossa aplicação configurada!  
@@ -125,6 +139,7 @@ void loop()
   //Gerencia a conexão com o servidor
   Blynk.run();
 }
+
 ```
 
 Esse código está disponível para download aqui no repositório, basta que você abra o .ino e dê o upload do código em seu ESP8266 ao clicar no botão "Carregar" ou ao pressionar as teclas CTRL + U.  
@@ -143,10 +158,19 @@ Podemos clicar o ícone do monitor Serial que se encontra no canto superior dire
 Se aparece no Serial um "Ready", tudo aparenta estar bem!  
 
 ## Circuito
+Itens necessários:  
+
+- 1x jogo de jumpers macho X fêmea;  
+- 1x jogo de jumpers macho X macho;  
+- 1x protoboard de 400 pontos ou maior;  
+- 3x resistores 330Ohm;  
+- 3x LEDs disfusos, cor de preferência (usamos vermelho, amarelo e verde);  
+- 1x microcontrolador ESP8266.  
+
 Agora montamos o circuito, que deve ficar dessa forma:  
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60518597/117830927-7aa6ae00-b24a-11eb-9940-512997b4f03e.png">
+  <img src="https://user-images.githubusercontent.com/60518597/117968318-70dd8300-b2fc-11eb-94d2-a91612c0dd82.png">
 </p>
 
 E, se estiver tudo certo, esse será o resultado:  
