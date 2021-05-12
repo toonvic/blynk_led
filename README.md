@@ -62,6 +62,15 @@ Basta seguirmos os mesmos passos para criar os botões, porém definindo o botã
   <img src="https://user-images.githubusercontent.com/60518597/117672232-07d10080-b180-11eb-85ed-5e4ca439794b.jpg" width="250">
 </p>
 
+Podemos também compartilhar o acesso da nossa aplicação, recurso disponível nas configurações do projeto, mas essa função nos consome 1000 energias permanentes.  
+
+Energias são uma espécie de "dinheiro" que são usadas para adicionar Widgets ou compartilhar projetos, então tem que administrar bem!
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60518597/117977713-7ee4d100-b307-11eb-8a60-f35c21f35c4e.png" width="250">
+  <img src="https://user-images.githubusercontent.com/60518597/117977669-755b6900-b307-11eb-8ea3-3217a1c501b5.jpg" width="250">
+</p>
+
 E pronto, temos nossa aplicação configurada!  
 
 ## Configurando o Arduino IDE
