@@ -1,7 +1,7 @@
 # Acionamento remoto de LEDs com Blynk 🚦
 
 ## It's showtime! 🗿
-Para este tutorial, utilizaremos o Blynk e o Arduino IDE para montarmos um circuito que nos permite acender LED's remotamente.  
+Para este tutorial, utilizaremos o Blynk e o Arduino IDE para montarmos um circuito que nos permite acender LEDs remotamente.  
 
 Estaremos utilizando o Arduino IDE, plataforma de desenvolvimento Arduino, pela sua praticidade, mas recomendamos também o uso do PlatformIO para uma melhor estrutura de código.
 
